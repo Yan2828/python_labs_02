@@ -1,5 +1,5 @@
 # Лабораторная работа №1: Игровая логика — класс Character (Вариант 6) 🎮⚔️
-![photo](https://private-user-images.githubusercontent.com/74038190/238200437-de038172-e903-4951-926c-755878deb0b4.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzM3NzU1NjAsIm5iZiI6MTc3Mzc3NTI2MCwicGF0aCI6Ii83NDAzODE5MC8yMzgyMDA0MzctZGUwMzgxNzItZTkwMy00OTUxLTkyNmMtNzU1ODc4ZGViMGI0LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzE3VDE5MjEwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFhMjNhYWI0MjNiMzU5MmNmY2YwYjg1M2Q0OGRkNDA3YTNhNTZmYzMyNzc2MjRjNTA5NTBiMGE3ZTRiYzA0MTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.DINjopjl4RNhw8_Cu-oEVQkvtsiWxFBLav4HwlKTknY)
+![photo](https://user-images.githubusercontent.com/74038190/235224431-e8c8c12e-6826-47f1-89fb-2ddad83b3abf.gif)
 ## Цель работы
 •	Освоить объявление пользовательских классов
 •	Реализовать инкапсуляцию (закрытые поля)
@@ -16,6 +16,7 @@ ________________________________________
 ## Реализованный класс
 **Character** — ***основной класс, моделирующий игрового персонажа.
 Атрибуты класса***
+
 •	MAX_LEVEL = 100 — максимально достижимый уровень
 •	BASE_HEALTH = 100 — базовое здоровье на 1 уровне
 •	HEALTH_PER_LEVEL = 10 — прирост максимального здоровья за уровень
@@ -51,3 +52,4 @@ BASE_HEALTH + (level - 1) * HEALTH_PER_LEVEL
 •	level_up() — увеличивает уровень на 1, восстанавливает здоровье до максимума.
 •	attack(target) — атакует другого персонажа, нанося урон = уровень × 10 (демонстрация взаимодействия объектов).
 Все методы, изменяющие состояние, проверяют, жив ли персонаж (если нет — выбрасывают RuntimeError). Также проверяются корректность входных данных (тип, диапазон).git 
+
