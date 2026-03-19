@@ -25,7 +25,7 @@
 
 ```python
 class Character:
-    # Атрибуты класса
+    
     MAX_LEVEL = 100
     BASE_HEALTH = 100
     HEALTH_PER_LEVEL = 15
