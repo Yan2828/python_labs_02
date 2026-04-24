@@ -99,7 +99,6 @@ class Voin(Character, Printable, Comparable):
     def use_skill(self, target_mag):
         return self.kill_mag(target_mag)
 
-    # Реализация интерфейсов
     def to_string(self) -> str:
         return f"Воин {self.name}: уровень {self.level}, аура {self.aura}, мотивация {self.motivazia}"
 
@@ -142,7 +141,6 @@ class Mag(Character, Printable, Comparable):
     def use_skill(self, target_voin):
         return self.kill_voin(target_voin)
 
-    # Реализация интерфейсов
     def to_string(self) -> str:
         return f"Маг {self.name}: уровень {self.level}, мана {self.mana}, сонливость {self.sleep}"
 
@@ -189,7 +187,6 @@ class CharacterTeam:
     def __getitem__(self, index):
         return self._items[index]
 
-    # Фильтрация по интерфейсу Printable
     def get_printable(self):
         new_team = CharacterTeam()
         for c in self._items:
@@ -197,7 +194,6 @@ class CharacterTeam:
                 new_team.add(c)
         return new_team
 
-    # Фильтрация по интерфейсу Comparable
     def get_comparable(self):
         new_team = CharacterTeam()
         for c in self._items:
