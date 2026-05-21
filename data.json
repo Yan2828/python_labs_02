@@ -1,0 +1,22 @@
+[
+  {
+    "type": "Voin",
+    "name": "Красачик",
+    "level": 100,
+    "health": 1585.0,
+    "experience": 0.0,
+    "state": "alive",
+    "aura": 100,
+    "motivazia": 0
+  },
+  {
+    "type": "Mag",
+    "name": "Супер пупер красавчик",
+    "level": 100,
+    "health": 1585.0,
+    "experience": 0.0,
+    "state": "alive",
+    "mana": 1000,
+    "sleep": 0
+  }
+]
